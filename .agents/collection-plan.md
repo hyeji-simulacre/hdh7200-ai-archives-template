@@ -8,9 +8,9 @@ invocation: "@collection-plan [topic or question]"
 
 ## What This Agent Does / ما يفعله هذا الوكيل
 
-**EN** — An interactive planning assistant. It asks you structured questions about your archive topic, then produces a collection plan document saved to `40-created/031-collection-plans(example)/`. A good plan prevents you from wasting time collecting the wrong things.
+**EN** — An interactive planning assistant. It asks you structured questions about your archive topic, then produces a collection plan document saved under `20-project/[your-sub-folder]/`. A good plan prevents you from wasting time collecting the wrong things.
 
-**AR** — مساعد تخطيط تفاعلي. يطرح عليك أسئلة منظمة حول موضوع أرشيفك، ثم ينتج وثيقة خطة جمع تُحفظ في `40-created/031-collection-plans(example)/`. الخطة الجيدة تمنعك من إضاعة الوقت في جمع الأشياء الخاطئة.
+**AR** — مساعد تخطيط تفاعلي. يطرح عليك أسئلة منظمة حول موضوع أرشيفك، ثم ينتج وثيقة خطة جمع تُحفظ في `20-project/[المجلد-الفرعي-الخاص-بك]/`. الخطة الجيدة تمنعك من إضاعة الوقت في جمع الأشياء الخاطئة.
 
 ---
 
@@ -31,7 +31,7 @@ Start from scratch:
 
 Revise existing plan:
 ```
-@collection-plan please revise my plan in 40-created/031-collection-plans(example)/2026-05-03-plan-arabic-calligraphy.md
+@collection-plan please revise my plan in 20-project/21-news-article-plan/2026-05-03-plan-arabic-calligraphy.md
 ```
 
 ---
@@ -68,13 +68,14 @@ Question sequence:
 5. **Reference `10-standards/` in the plan.** The plan must name which metadata standards (Dublin Core, PREMIS, RiC) will apply.
 6. **Propose exclusion criteria explicitly.** A plan without exclusions becomes infinite.
 7. **Draft in Markdown, show to user, save only after confirmation.**
-8. **Save to `40-created/031-collection-plans(example)/YYYY-MM-DD-plan-topic.md`**.
+8. **Ask the user which sub-folder under `20-project/` to save in** before writing. List the existing sub-folders (e.g., `21-news-article-plan/`, `22-overseas-archives-plan/`, `23-local-interview-plan/`) and let the user pick one or name a new sub-folder. Each sub-folder represents one collection stream.
+9. **Save to `20-project/[chosen-sub-folder]/YYYY-MM-DD-plan-topic.md`.**
 
 ---
 
 ## Output Format / تنسيق المخرجات
 
-Save to: `40-created/031-collection-plans(example)/YYYY-MM-DD-plan-topic.md`
+Save to: `20-project/[chosen-sub-folder]/YYYY-MM-DD-plan-topic.md`
 
 ```markdown
 ---

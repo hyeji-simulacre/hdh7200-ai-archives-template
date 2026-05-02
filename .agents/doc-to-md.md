@@ -8,9 +8,9 @@ invocation: "@doc-to-md [file path]"
 
 ## What This Agent Does / ما يفعله هذا الوكيل
 
-**EN** — Converts PDF, DOCX, and other document files into Markdown records in your archive. Extracts text, preserves structure (headings, lists, tables), and attempts OCR if the PDF is image-based. Saves the converted file to `30-collected/` with full source metadata.
+**EN** — Converts PDF, DOCX, and other document files into Markdown records in your archive. Extracts text, preserves structure (headings, lists, tables), and attempts OCR if the PDF is image-based. Saves the converted file under `30-collected/3X-[record_type]/` (the sub-folder is decided by what kind of source the document is — a news article PDF goes to `31-news-article/`, a photo-heavy document to `33-photograph/`, etc.). Full source metadata is preserved.
 
-**AR** — يحوّل ملفات PDF و DOCX وتنسيقات المستندات الأخرى إلى سجلات Markdown في أرشيفك. يستخرج النص، يحافظ على البنية (العناوين، القوائم، الجداول)، ويحاول التعرف الضوئي على الحروف (OCR) إذا كان PDF قائمًا على الصور. يحفظ الملف المحوّل في `30-collected/` مع البيانات الوصفية الكاملة للمصدر.
+**AR** — يحوّل ملفات PDF و DOCX وتنسيقات المستندات الأخرى إلى سجلات Markdown في أرشيفك. يستخرج النص، يحافظ على البنية (العناوين، القوائم، الجداول)، ويحاول التعرف الضوئي على الحروف (OCR) إذا كان PDF قائمًا على الصور. يحفظ الملف المحوّل تحت `30-collected/3X-[نوع-السجل]/` (يُختار المجلد الفرعي بحسب نوع المصدر).
 
 ---
 
@@ -60,7 +60,7 @@ Batch:
 ## Rules / القواعد
 
 1. **Keep the original file.** Never delete or modify the source document.
-2. **Save conversion to `30-collected/`.** Use an appropriate subfolder (`024-documents/` if none exists).
+2. **Save conversion to the appropriate `30-collected/3X-[record_type]/` sub-folder** based on what the document actually is. Examples: a scanned newspaper page → `31-news-article/`; an interview transcript PDF → `32-interview-video/` (if it documents a recorded interview); a catalog of photographs → `33-photograph/`. If none of the existing sub-folders fits, ask the user which one to use or whether to create a new sub-folder (e.g., `34-official-document/`).
 3. **Always record**: original filename, file format, file size, conversion date, conversion method (direct / OCR), OCR confidence (if applicable), language.
 4. **For OCR output, flag low-confidence sections.** Mark unclear passages with `[unclear]` so the user knows to verify.
 5. **Preserve page numbers** in the output for PDFs. Format: `--- Page N ---`.
@@ -72,7 +72,7 @@ Batch:
 
 ## Output Format / تنسيق المخرجات
 
-Save to: `30-collected/024-documents/YYYY-MM-DD-original-filename.md`
+Save to: `30-collected/3X-[record_type]/YYYY-MM-DD-original-filename.md` (record_type chosen by what the document is, see Rule 2)
 
 ```markdown
 ---
@@ -122,7 +122,7 @@ Invocation:
 @doc-to-md /Users/student/Desktop/calligraphy-report-2024.pdf
 ```
 
-Output file: `30-collected/024-documents/2026-05-08-calligraphy-report-2024.md`
+Output file: `30-collected/31-news-article/2026-05-08-calligraphy-report-2024.md` (the report is a news-adjacent document, so it goes under `31-news-article/`; the agent confirms with the user before saving)
 
 ---
 

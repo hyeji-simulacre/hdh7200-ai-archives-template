@@ -25,7 +25,7 @@ invocation: "@note-linker" after creating a new note in 40-created/
 ## How to Invoke / كيفية الاستدعاء
 
 ```
-@note-linker please find related notes for 40-created/033-insight-note(example)/2026-05-20-insight-womens-names-missing.md
+@note-linker please find related notes for 40-created/42-insight-note/2026-05-20-insight-womens-names-missing.md
 ```
 
 ---
@@ -33,7 +33,7 @@ invocation: "@note-linker" after creating a new note in 40-created/
 ## Rules / القواعد
 
 1. **Read the target note first.** Extract its main claim, keywords, and referenced records.
-2. **Scan only `30-collected/`, `40-created/`, and `50-daily-report/51-daily-note/`.** Do not scan `00-system/`, `10-standards/`, or `agents/`.
+2. **Scan only `30-collected/`, `40-created/`, and `50-daily-report/51-daily-note/`.** Do not scan `00-system/`, `10-standards/`, `20-project/`, or `.agents/`.
 3. **Suggest 3–5 notes maximum.** More than 5 is noise.
 4. **For each suggestion, write 1–2 sentences explaining the connection.** Example: "This insight from 2026-05-10 contradicts the current claim — worth comparing."
 5. **Do not create or edit notes yourself.** Only suggest. The user adds the links manually (or says "yes, add them").
@@ -60,14 +60,14 @@ invocation: "@note-linker" after creating a new note in 40-created/
 
 ## Example / مثال
 
-**Target**: `40-created/033-insight-note(example)/2026-05-20-insight-womens-names-missing-from-manuscript-records.md`
+**Target**: `40-created/42-insight-note/2026-05-20-insight-womens-names-missing-from-manuscript-records.md`
 
 **Output**:
 
 ```markdown
 ## Suggested Links for: Women's names missing from manuscript records
 
-### 1. [2026-05-10 Riyadh calligraphy workshop field note](../032-field-note(example)/2026-05-10-fieldnote-riyadh-calligraphy-workshop.md)
+### 1. [2026-05-10 Riyadh calligraphy workshop field note](../41-idea-note/2026-05-10-fieldnote-riyadh-calligraphy-workshop.md)
 **Why**: The workshop had 8 female calligraphers but the exhibition catalog listed only 2 names. Direct evidence for this insight.
 **Type**: similarity
 

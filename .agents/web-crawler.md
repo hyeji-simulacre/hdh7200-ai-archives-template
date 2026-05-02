@@ -8,9 +8,9 @@ invocation: "@web-crawler [URL or search query]"
 
 ## What This Agent Does / ما يفعله هذا الوكيل
 
-**EN** — Fetches a web page (or a list of pages), extracts the main content, and saves it as a Markdown record in `30-collected/`. Always preserves the source URL, access date, author, and license information. Not a bulk scraper — focused on thoughtful, cited collection.
+**EN** — Fetches a web page (or a list of pages), extracts the main content, and saves it as a Markdown record under `30-collected/3X-[record_type]/`. Always preserves the source URL, access date, author, and license information. Not a bulk scraper — focused on thoughtful, cited collection.
 
-**AR** — يجلب صفحة ويب (أو قائمة صفحات)، يستخرج المحتوى الرئيسي، ويحفظه كسجل Markdown في `30-collected/`. يحفظ دائمًا رابط المصدر، تاريخ الوصول، المؤلف، ومعلومات الترخيص. ليس مكشطًا جماعيًا — بل جمع مدروس وموثق.
+**AR** — يجلب صفحة ويب (أو قائمة صفحات)، يستخرج المحتوى الرئيسي، ويحفظه كسجل Markdown تحت `30-collected/3X-[نوع-السجل]/`. يحفظ دائمًا رابط المصدر، تاريخ الوصول، المؤلف، ومعلومات الترخيص. ليس مكشطًا جماعيًا — بل جمع مدروس وموثق.
 
 ---
 
@@ -45,7 +45,7 @@ Search-and-collect (be careful, agent may hallucinate URLs — verify):
 
 1. **Always record**: source URL, page title, author (if identifiable), publication date, access date (today), license (if stated), language.
 2. **Respect robots.txt and terms of service.** If a site blocks crawlers, stop and report.
-3. **Save one record per page** as a Markdown file in the appropriate `30-collected/02X-*/` subfolder.
+3. **Save one record per page** as a Markdown file in the appropriate `30-collected/3X-[record_type]/` subfolder. For news articles use `31-news-article/`. If the source does not match an existing sub-folder, ask the user which sub-folder applies or whether to create a new one (e.g., `34-official-document/`).
 4. **File naming**: `YYYY-MM-DD-publisher-short-title.md`
 5. **Preserve the original language.** Do not auto-translate. If the page is Arabic, keep the Arabic body.
 6. **Flag copyright-restricted content.** In frontmatter, set `license: unknown` and add a note in the body: "Verify copyright before redistribution."
@@ -56,7 +56,7 @@ Search-and-collect (be careful, agent may hallucinate URLs — verify):
 
 ## Output Format / تنسيق المخرجات
 
-Save to: `30-collected/02X-category/YYYY-MM-DD-publisher-short-title.md`
+Save to: `30-collected/3X-[record_type]/YYYY-MM-DD-publisher-short-title.md` (e.g., `31-news-article/`)
 
 ```markdown
 ---
@@ -95,7 +95,7 @@ Invocation:
 @web-crawler https://ich.unesco.org/en/RL/arabic-calligraphy-01718
 ```
 
-Output file: `30-collected/022-news(example)/2026-05-03-unesco-arabic-calligraphy-ich.md`
+Output file: `30-collected/31-news-article/2026-05-03-unesco-arabic-calligraphy-ich.md`
 
 ---
 

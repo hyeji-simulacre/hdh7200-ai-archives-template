@@ -8,9 +8,9 @@ invocation: "@insight-memo [the claim you want to argue]"
 
 ## What This Agent Does / ما يفعله هذا الوكيل
 
-**EN** — Turns a student's observation into a polished **insight memo** with one clear claim, supporting evidence from your archive, and honest counter-evidence. Saves to `40-created/033-insight-note(example)/`. Unlike field notes (which are raw), insight memos are **arguments** — they are the most valuable records in your archive.
+**EN** — Turns a student's observation into a polished **insight memo** with one clear claim, supporting evidence from your archive, and honest counter-evidence. Saves to `40-created/42-insight-note/`. Unlike field notes (which are raw), insight memos are **arguments** — they are the most valuable records in your archive.
 
-**AR** — يحوّل ملاحظة الطالب إلى **مذكرة فكرة** مصقولة بادعاء واحد واضح، وأدلة داعمة من أرشيفك، وأدلة مضادة نزيهة. يحفظها في `40-created/033-insight-note(example)/`. على عكس الملاحظات الميدانية (الخام)، مذكرات الأفكار هي **حجج** — وهي أقيم السجلات في أرشيفك.
+**AR** — يحوّل ملاحظة الطالب إلى **مذكرة فكرة** مصقولة بادعاء واحد واضح، وأدلة داعمة من أرشيفك، وأدلة مضادة نزيهة. يحفظها في `40-created/42-insight-note/`. على عكس الملاحظات الميدانية (الخام)، مذكرات الأفكار هي **حجج** — وهي أقيم السجلات في أرشيفك.
 
 ---
 
@@ -41,12 +41,12 @@ Starting from scratch:
 
 1. **One claim per memo.** If the user has multiple claims, split into multiple memos. Do not merge.
 2. **The title IS the claim.** Not "About women in calligraphy" but "Women's names are systematically missing from manuscript attribution."
-3. **Force the user to cite evidence.** Every memo must reference at least 2 records in `30-collected/` or observations in `40-created/032-field-note/`.
+3. **Force the user to cite evidence.** Every memo must reference at least 2 records in `30-collected/` or observations in `40-created/41-idea-note/`.
 4. **Require counter-evidence.** Ask: "Which record in your archive might contradict this?" If the user cannot find one, ask them to search.
 5. **Keep it short.** 300–500 words in the body. Insight is sharpened by compression.
 6. **The user is the author, not the agent.** Do not write paragraphs in the user's voice without their input. Ask, draft, let user edit.
 7. **Flag weak claims.** If the evidence is thin, say so and suggest what additional records would strengthen the argument.
-8. **Save to `40-created/033-insight-note(example)/YYYY-MM-DD-insight-the-claim.md`.**
+8. **Save to `40-created/42-insight-note/YYYY-MM-DD-insight-the-claim.md`.**
 
 ---
 
@@ -62,7 +62,7 @@ Starting from scratch:
 
 ## Output Format / تنسيق المخرجات
 
-Save to: `40-created/033-insight-note(example)/YYYY-MM-DD-insight-the-claim.md`
+Save to: `40-created/42-insight-note/YYYY-MM-DD-insight-the-claim.md`
 
 ```markdown
 ---
@@ -115,7 +115,7 @@ Invocation:
 @insight-memo Women's names are systematically missing from historical manuscript attribution, even when style analysis suggests women scribes.
 ```
 
-Output file: `40-created/033-insight-note(example)/2026-05-20-insight-womens-names-missing-from-manuscript-records.md`
+Output file: `40-created/42-insight-note/2026-05-20-insight-womens-names-missing-from-manuscript-records.md`
 
 ---
 

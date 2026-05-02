@@ -120,13 +120,13 @@ When updating an existing daily note, the agent fills in each section like this:
 ```markdown
 ## What I collected today
 
-- 3 articles from UNESCO — [[30-collected/022-news(example)/2026-05-10-unesco-arabic-calligraphy.md]]
-- 1 PDF report converted — [[30-collected/024-documents/2026-05-10-calligraphy-report.md]]
+- 3 articles from UNESCO — [[30-collected/31-news-article/2026-05-10-unesco-arabic-calligraphy.md]]
+- 1 PDF report converted — [[30-collected/31-news-article/2026-05-10-calligraphy-report.md]]
 
 ## What I created today
 
-- Field note from Riyadh workshop — [[40-created/032-field-note(example)/2026-05-10-fieldnote-riyadh-workshop.md]]
-- Revised collection plan — [[40-created/031-collection-plans(example)/2026-05-10-plan-arabic-calligraphy.md]]
+- Field note from Riyadh workshop — [[40-created/41-idea-note/2026-05-10-fieldnote-riyadh-workshop.md]]
+- Revised collection plan — [[20-project/21-news-article-plan/2026-05-10-plan-arabic-calligraphy.md]]
 
 ## What I learned
 

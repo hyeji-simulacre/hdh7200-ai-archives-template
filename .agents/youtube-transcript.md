@@ -46,13 +46,13 @@ With language preference:
 5. **Always record**: video URL, title, channel name, upload date, duration, transcript language, transcript type (manual / auto).
 6. **Do not translate.** If the transcript is Arabic, keep it Arabic. Translation is a separate task.
 7. **Respect copyright.** Note in frontmatter: "YouTube videos retain creator copyright. Use for research only, do not redistribute."
-8. **Save to `30-collected/`.** If no video subfolder exists, suggest creating `30-collected/023-video/`.
+8. **Save to `30-collected/32-interview-video/`** by default. If the video is not an interview but a documentary, lecture, or performance, ask the user whether to save to `32-interview-video/` anyway or create a new sub-folder (e.g., `35-video-lecture/`, `36-performance/`).
 
 ---
 
 ## Output Format / تنسيق المخرجات
 
-Save to: `30-collected/023-video/YYYY-MM-DD-channel-short-title.md` (create folder if needed)
+Save to: `30-collected/32-interview-video/YYYY-MM-DD-channel-short-title.md` (or another `30-collected/3X-*/` sub-folder if the video is not an interview)
 
 ```markdown
 ---
@@ -102,7 +102,7 @@ Invocation:
 @youtube-transcript https://www.youtube.com/watch?v=exampleID
 ```
 
-Output file: `30-collected/023-video/2026-05-12-unesco-arabic-calligraphy-documentary.md`
+Output file: `30-collected/32-interview-video/2026-05-12-unesco-arabic-calligraphy-documentary.md`
 
 ---
 
