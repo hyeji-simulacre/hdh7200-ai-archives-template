@@ -26,7 +26,7 @@ Contact: hyeji@contexta.co.kr
 ### Option A — Git Clone (recommended)
 
 ```bash
-git clone https://github.com/[INSTRUCTOR_REPO]/AI-Archives-Workspace-HDH7200.git
+git clone https://github.com/hyeji-simulacre/hdh7200-ai-archives-template.git
 ```
 
 Open the folder in **Antigravity** → File → Open Folder.
