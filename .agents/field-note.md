@@ -8,9 +8,9 @@ invocation: "@field-note [short description of what happened]"
 
 ## What This Agent Does / ما يفعله هذا الوكيل
 
-**EN** — Helps you capture **rough, quick observations** from fieldwork: a workshop you attended, an interview, a site visit, a conversation with a practitioner. Field notes are NOT polished insights — they are raw material. The agent asks a few fast questions, organizes your answers, and saves a field note to `40-created/032-field-note(example)/`.
+**EN** — Helps you capture **rough, quick observations** from fieldwork: a workshop you attended, an interview, a site visit, a conversation with a practitioner. Field notes are NOT polished insights — they are raw material. The agent asks a few fast questions, organizes your answers, and saves a field note to `40-created/41-idea-note/`.
 
-**AR** — يساعدك في تسجيل **ملاحظات سريعة خام** من العمل الميداني: ورشة حضرتها، مقابلة، زيارة موقع، محادثة مع ممارس. الملاحظات الميدانية ليست أفكارًا مصقولة — بل مواد خام. يطرح الوكيل بضعة أسئلة سريعة، ينظّم إجاباتك، ويحفظ ملاحظة ميدانية في `40-created/032-field-note(example)/`.
+**AR** — يساعدك في تسجيل **ملاحظات سريعة خام** من العمل الميداني: ورشة حضرتها، مقابلة، زيارة موقع، محادثة مع ممارس. الملاحظات الميدانية ليست أفكارًا مصقولة — بل مواد خام. يطرح الوكيل بضعة أسئلة سريعة، ينظّم إجاباتك، ويحفظ ملاحظة ميدانية في `40-created/41-idea-note/`.
 
 ---
 
@@ -47,7 +47,7 @@ Or let the agent drive the questions:
 4. **Do not invent details.** If the user is unsure about a number or name, mark it `[uncertain]`.
 5. **Preserve the user's voice.** Do not rewrite the user's sentences into academic prose. Keep them rough.
 6. **Add minimum structure only.** Suggested sections: context, observations, quotes, early thoughts, follow-up questions.
-7. **Save to `40-created/032-field-note(example)/YYYY-MM-DD-fieldnote-short-topic.md`.**
+7. **Save to `40-created/41-idea-note/YYYY-MM-DD-fieldnote-short-topic.md`.**
 8. **Do not suggest links to other notes.** That is the job of `@note-linker` (run that after saving if desired).
 
 ---
@@ -69,7 +69,7 @@ Skip any question the user has already answered in the initial invocation.
 
 ## Output Format / تنسيق المخرجات
 
-Save to: `40-created/032-field-note(example)/YYYY-MM-DD-fieldnote-short-topic.md`
+Save to: `40-created/41-idea-note/YYYY-MM-DD-fieldnote-short-topic.md`
 
 ```markdown
 ---
@@ -124,7 +124,7 @@ Invocation:
 @field-note Riyadh calligraphy workshop, 8 people, 6 women, 2 men, teacher Khalid Al-Rashid
 ```
 
-Output file: `40-created/032-field-note(example)/2026-05-10-fieldnote-riyadh-calligraphy-workshop.md`
+Output file: `40-created/41-idea-note/2026-05-10-fieldnote-riyadh-calligraphy-workshop.md`
 
 ---
 

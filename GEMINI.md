@@ -71,11 +71,12 @@ AI-Archives-Workspace-HDH7200/
 
 | Agent | File | Role |
 |---|---|---|
+| Thinking Partner | `.agents/thinking-partner.md` | Free-form conversation to clarify topic/scope/approach before writing |
+| Collection Plan | `.agents/collection-plan.md` | Draft a collection plan interactively |
 | Web Crawler | `.agents/web-crawler.md` | Collect web pages with source metadata |
 | YouTube Transcript | `.agents/youtube-transcript.md` | Extract video transcripts |
 | Doc-to-MD | `.agents/doc-to-md.md` | Convert PDF/DOCX to Markdown |
-| Collection Plan | `.agents/collection-plan.md` | Draft a collection plan interactively |
-| Field Note | `.agents/field-note.md` | Capture fieldwork observations |
+| Field Note | `.agents/field-note.md` | Capture fieldwork observations (saved to `40-created/41-idea-note/`) |
 | Insight Memo | `.agents/insight-memo.md` | Turn observations into analytical claims |
 | Note Linker | `.agents/note-linker.md` | Suggest related notes |
 | Daily Note | `.agents/daily-note.md` | Summarize today's session |
