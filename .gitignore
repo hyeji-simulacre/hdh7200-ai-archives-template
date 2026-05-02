@@ -1,0 +1,33 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Sensitive data
+00-system/03-security/.env
+00-system/03-security/*.token
+00-system/03-security/*.key
+*.secret
+
+# Large media (keep metadata .md files, exclude raw binaries > 50MB)
+*.tiff
+*.tif
+*.raw
+*.psd
+*.ai
+*.indd
+
+# Backup folders (local only, not pushed)
+_backup_*/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node / dev experiment artifacts
+node_modules/
+dist/
+.next/
