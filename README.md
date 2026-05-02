@@ -8,6 +8,19 @@
 
 ---
 
+## Copyright / حقوق النشر
+
+© 2026 **Hyeji Jung (정혜지), ContextA.** All rights reserved.
+
+This material is created for the **HDH 7200 Digital Archiving Systems** course only.
+Enrolled students may clone and modify it for their own coursework.
+**Redistribution, re-publication, or modification for third-party use is prohibited
+without prior written permission from the author.** See [`LICENSE`](LICENSE) for full terms.
+
+Contact: hyeji@contexta.co.kr
+
+---
+
 ## Quick Start — How to Import This Workspace / كيفية استيراد مساحة العمل
 
 ### Option A — Git Clone (recommended)
